@@ -23,7 +23,7 @@ app.post("/chat", async (req, res) => {
   res.send(completion.data.choices[0].message.content);
 });
 
-const port = 80;
+const port = 443;
 app.listen(port, () => {
   console.log(`Sever listening on port ${port}`);
 });
