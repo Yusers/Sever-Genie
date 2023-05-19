@@ -2,9 +2,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { Configuration, OpenAIApi } = require("openai");
-
+const { API_KEY } = require("./config");
 const config = new Configuration({
-  apiKey: "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",
+  apiKey: API_KEY,
 });
 const openai = new OpenAIApi(config);
 // setup Server
